@@ -11,7 +11,10 @@ System.err.println("je m'appelle "+nom+ " et j'ai "+age );
 int age10 = age+10;
 System.err.println("Et dans 10ans j'aurais " + age10 + " ans.");
 
+String name = "Filip";
+byte agefilip = 15;
 
+//bonsoir
 }
     
 }

@@ -38,8 +38,8 @@ public class Exercice08 {
         }
         int croissant = 1;
         while (croissant < 4) {
-            System.out.println("boucle while,itération" + boucle);
-            boucle++;
+            System.out.println("boucle while,itération" + croissant);
+            croissant++;
         }
     }
 

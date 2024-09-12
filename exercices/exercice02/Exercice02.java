@@ -6,7 +6,7 @@ public class Exercice02 {
         
         System.out.println("Bonjour");
        
-      
+      double nombre = 9.99;
 
 
 

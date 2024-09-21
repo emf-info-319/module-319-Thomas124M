@@ -1,6 +1,8 @@
 package devoirs.devoir02;
 
 public class devoir02 {
+    public final static int réservoirA = 3;
+    public final static int réservoirB = 5;
     public static void main(String[] args) {
         int réservoirA = 0;
         int réservoirB = 0;
@@ -11,13 +13,13 @@ public class devoir02 {
             System.out.println("remplisage du réservoir A...");
             remplissage--;
             réservoirA++;
-            System.out.println("le réservoir A : " + réservoirA + "le réservoir B : " + réservoirB);
-        } while (réservoirA < 4);
+            System.out.println("le réservoir A : " + réservoirA + " le réservoir B : " + réservoirB);
+        } while (réservoirA < );
         do {
             System.out.println("remplissage du réservoir B...");
             remplissage--;
             réservoirB++;
-            System.out.println("le réservoir A : " + réservoirA + "le réservoir B : " + réservoirB);
+            System.out.println("le réservoir A : " + réservoirA + "  réservoir B : " + réservoirB);
 
         } while (réservoirB < 6);
         if (remplissage == 0) {

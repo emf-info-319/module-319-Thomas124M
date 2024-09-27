@@ -6,7 +6,7 @@ public class devoir02 {
     public static void main(String[] args) {
         int réservoirA = 0;
         int réservoirB = 0;
-        int remplissage = (int) (Math.random() * (CAPACITE_RESERVOIR_A+CAPACITE_RESERVOIR_B - 1 + 1)) + 1;
+        int remplissage = (int) (Math.random() * (CAPACITE_RESERVOIR_A+CAPACITE_RESERVOIR_B - 1 + 0)) + 1;
 
         System.out.println("il y a " +remplissage+ " litre à remplir.");
         do {
@@ -14,7 +14,7 @@ public class devoir02 {
             remplissage--;
             réservoirA++;
             System.out.println("le réservoir A : " + réservoirA + "le réservoir B : " + réservoirB);
-        } while (réservoirA<=3);
+        } while (réservoirA<3);
         do {
             System.out.println("remplissage du réservoir B...");
             remplissage--;

@@ -13,7 +13,8 @@ public class Exercice09ex3 {
         }
         int cellule =0;
         for (int i =0 ; i <tableau1.length; i++) {cellule = cellule +tableau1[i];}
-        System.out.println("la classe a une moyenne de :");
+        float moyenne = (float) cellule / tableau1.length;
+        System.out.println("la classe a une moyenne de : " +moyenne);
 
     }
 }

@@ -19,6 +19,6 @@ System.out.println("TableauBlanc " +a+ " : " + tableauBlanc[a]);
         }
         int tableauMétisse =0;
         for (int i =0 ; i <tableauMétisse.length; i++) {tableauMétisse = cellule +tableau1[i];}
-    }
+            }
 
 }

@@ -5,7 +5,7 @@ import java.lang.Math;
 public class exerciceTeste10 {
     public static void main(String[] args) {
 
-        int nb1 = -4;
+        int nb1 = 4;
         int nb2 = 3;
         double nombre = Math.pow(nb1, nb2);
         System.out.println(nombre);

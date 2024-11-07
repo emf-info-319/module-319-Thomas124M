@@ -10,6 +10,8 @@ public class exercice10 {
     public static void main(String[] args) {
         int[] tableau = creertableau(50);
 
+        valeurDuTableauAléatoire(tableau);
+
         direContenuInfo();
 
         tableau = valeurDuTableauAléatoire(tableau);
@@ -37,19 +39,40 @@ public class exercice10 {
         System.out.println("le tableau a une taille de 50 cellules.");
         System.out.println("Contenu du tableau aléatoire :");
     }
-
+public static int [] valeurFixeDuTableau(int[]tableau, int valeur){
+    for (int i = 0; i < tableau.length; i++) {
+        tableau[i]= valeur;
+    } return tableau;
+}
     public static int[] valeurDuTableauAléatoire(int[] tableau) {
 
         for (int i = 0; i < tableau.length; i++) {
-            tableau[i] = (int) (Math.random() * (MAX - MIN + 1)) - MIN;
+            tableau[i] = (int) (Math.random() * (MAX - MIN + 1)) + MIN;
             System.out.println("tab[" + i + "] = " + tableau[i]);
         }
         return tableau;
     }
-
+public static int retournerMin(int[]tableau){
+    if (tableau.length == 0){
+        return 0;
+    }
+    int min = tableau[0];
+    for (int i = 1; i < tableau.length; i++) {
+        min = Math.min(min,tableau[i]);
+    }return min;
+}
+public static int retournerMax(int[]tableau){
+    if (tableau.length == 0){
+        return 0;
+    }
+    int max = tableau[0];
+    for (int i = 1; i < tableau.length; i++) {
+        max = Math.max(max,tableau[i]);
+    }return max;
+}
     public static int[] intvaleurMinEtMax(int[] tableau) {
-        int minVal = Integer.MAX_VALUE;
-        int maxVal = Integer.MIN_VALUE;
+        int minVal = MAX;
+        int maxVal = MIN;
 
         for (int nombre : tableau) {
             if (nombre < minVal) {
@@ -96,7 +119,7 @@ public class exercice10 {
         for (int i = 0; i < tableau.length; i++) {
             moyenne = moyenne + tableau[i];
         }
-        float moyenneGénéral = (float) moyenne / tableau.length;
+        double moyenneGénéral = (double) moyenne / tableau.length;
         System.out.println("La moyenne des cellules du tableau = " + moyenneGénéral);
         return tableau;
     }
@@ -113,4 +136,26 @@ public class exercice10 {
         return tableau;
     }
 
+      
+    
+ 
+ public static int premierOccurence(int[]tableau, int valeurRechercher){
+    int position=-1;
+    for (int i = 0; i < tableau.length; i++) {
+        if(tableau[i] == valeurRechercher){
+            position = i;
+            break;
+        }
+    }return position;
+ }
+ public static int dernièreOccurence(int[]tableau,int valeurRechercher){
+    int position = -1;
+    for (int i = tableau.length-1; i>=0; i++) {
+        if(tableau[i] == valeurRechercher){
+            position = i;
+            break;
+        }
+        
+    }return position;
+ }
 }

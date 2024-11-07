@@ -13,7 +13,7 @@ public class exercice101 {
         System.out.println("le tableau a une taille de 50 cellules.");
         System.out.println("Contenu du tableau aléatoire :");
         for (int i = 0; i < tableau.length; i++) {
-            tableau[i] = (int) (Math.random() * (MAX - MIN + 1)) - MIN;
+            tableau[i] = (int) (Math.random() * (MAX - MIN + 1)) + MIN;
             System.out.println("tab[" + i + "] = " + tableau[i]);
 
         }

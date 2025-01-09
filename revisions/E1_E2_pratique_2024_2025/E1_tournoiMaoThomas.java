@@ -11,7 +11,7 @@ public final static int MAX_GOAL = 10;
             System.out.println(pointsEquipes[i]);
 
             System.out.println("--------------------------");
-for (int j = 0; j < pointsEquipes.length; j++) {System.out.println(EQUIPES+ " a " );
+for (int j = 0; j < pointsEquipes.length; j++) {System.out.println(EQUIPES+ " a gagné contre "+EQUIPES );
     
 }
             System.out.println("--------------------------");
